@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=7, initial-scale=1.0">
+    <title>Curso de redes</title>
+    <link rel="stylesheet" href="css/hojadeestilo.css">
+</head>
+<body>
+    <header>
+        <div id="banner">
+            <figure>
+                <div id="imagenbanner"></div>
+            </figure>
+        </div>
+        <div id="menu">
+            <ul>
+                <li class="pag-actual"><a href="#">Inicio</a></li>
+                <li><a href="#">Topologias</a></li>
+                <li><a href="#">Elementos</a></li>
+                <li><a href="#">Conexiones</a></li>
+                <li><a href="#">Preguntas</a></li> </ul>
+        </div>
+    </header>
+    <section>
+        <div id="contenedor">
+            <aside>
+                <h2>Otros Temas</h2>
+                <ul>
+                    <li><a href="#">Descripcion Basica</a></li>
+                    <li><a href="#">Clasificacion de las Redes</a></li>
+                    <li><a href="#">Componentes basicos de las Redes</a></li>
+                    <li><a href="#">Transporte y comunicacion</a></li>
+                    <li><a href="#">Videos practicos</a></li>
+                </ul>
+            </aside>
+            <article>
+                <div class="contenido">
+                    <h2>Curso De Redes</h2>
+                    <p>Una <estrong>red de computadoras</estrong>, tambien llamada 
+                        <estrong>Una <strong>red de ordenadores</strong>, <strong>red
+                             comunicaciones de datos </strong> o <estrong>red informatica</estrong>,
+                              es un conjunto de equipos informaticos y software
+                               conectados entre si por medio de dispositivos fisicos que envian
+                                y resiven impulsos electricos, ondas electromagneticas o
+                                 cualquier otro medio para el transporte de datos, con la
+                                  finalidad de compartir informacion, recursos y ofrecer servicios. </p>
+                    <img src="IMG/descarga.jpg" width="200" height="200" class="alin-izq"/>
+                    <p>Como en todo proceso de comunicacion se requiere de un 
+                        emisor, un mensaje, un medio y un receptor. La finalidad
+                         principal para la cracion de una red de computadoras es
+                          compartir los recursos y la informacion en la distancia,
+                           asegurar la confiabilidad y la disponibilidad de la informacion,
+                            aumentar la velocidad de tranmision de los datos y reducir el
+                             costo general de estas acciones. Un ejemplo es Internet, la cual
+                              es una gran red de millones de computadoras ubicadas en
+                               distintos puntos del planeta interconectadas basicamente para
+                                compartir informacion y recursos.</p>
+
+                                <p>La estructura y el modo de funcionamiento de las redes
+                                    informaticas actuales estan definidos en varios estandares,
+                                    siendo el mas importante y extendido de todos ellos el modelo
+                                    TCP/IP basado en el modelo de referencia OSI. Este ultimo,
+                                    estructura cada red en siete capas con funciones concretas pero 
+                                    relacionadas entre si; en TCP/IP se reducen a cuatro capas.
+                                    Existen multitud de protocolos repartidos por cada capa, los
+                                    cuales tambien estan regidos por sus respectivos estandares.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <footer>
+        <p>Derechos reservados (C) 2015</p>
+        <p>Pagina wed diseñada por Maicol Joset Gutierrez</p>
+    </footer>
+</body>
+</html>
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #FF9a07 url(../img/fondo.jpg.) repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #8f8f8f;
+    width: 100%;
+}
+header{
+    overflow: hidden;
+    width: 800px;
+    margin: 10px auto 5px auto;
+}
+header #banner{
+    width: 100%;
+    height: 150px;
+}
+header #banner figure #imagenbanner{
+    overflow: hidden;
+    float: left;
+    width: 100%;
+    height: 250px;
+    background: url(../img/imagen.jpg);
+    border-radius: 10px;
+}
+header #menu{
+    float: right;
+    padding: 5px 0;
+    width: 550px;
+}
+header #menu ul li{
+    list-style: none;
+    float: left;
+}
+header #menu ul li a{
+    display: block;
+    margin-left: 5px;
+    padding: 6px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+}
+header #menu ul li a:hover, header #menu .pag-actual{
+    text-decoration: none;
+    background: #a0190a;
+    border-radius: 5px;
+    color:white;
+}
+section{
+    width: 100;
+    overflow: hidden;
+    background: white;
+}
+section #contenedor{
+    overflow: hidden;
+    width: 800px;
+    margin: 0px auto 5px auto;
+}
+
+section #contenedor aside{
+    float: left;
+    width: 220px;
+}
+section #contenedor aside h2{
+    padding: 0px 0px 20px 0px;
+    color: black;
+    letter-spacing: -1px;
+    font-size: 2em;
+}
+section #contenedor aside ul li{
+    list-style: none;
+    padding: 15px 0px;
+    border-top: 1px dashed #c0afa8;
+}
+section #contenedor aside ul li a{
+    text-decoration: none;
+    color: #9e8076;
+    font-size: 13px;
+}
+section #contenedor article{
+    float: right;
+    width: 570px;
+}
+section #contenedor article h2{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 5px;
+}
+section #contenedor article .contenido{
+    text-align: justify;
+    font-size: 16px;
+    padding: 5px;
+    line-height: 150%;
+}
+section #contenedor article .contenido .alin-izq{
+float: left;
+margin: 10px 10px 5px 0px;
+}
+footer{
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+footer p{
+    font-size: 16px;
+    color: #c5351e;
+    text-align: center;
+    line-height: 150%;
+}
